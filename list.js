@@ -5,6 +5,3 @@ export function getHTMlList(InputList) {
     }
     return "<ul>" + htmlList + "</ul>"
 }
-export function removeItem() {
-    console.log("function embeded")
-}
