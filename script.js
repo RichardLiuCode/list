@@ -1,7 +1,8 @@
 import { getHTMlList } from "./list.js"
+import { filterHTML } from "https://richardliucode.github.io/richardcode/RichardJS/xssFilterModule.js"
 var list = [];
 document.getElementById("addItem").addEventListener("click", function () {
-    var inputItem = document.getElementById("input1").value;
+    var inputItem = filterHTML(document.getElementById("input1").value);
     if (inputItem != "") {
         list.push(inputItem);
         document.getElementById("display").innerHTML = getHTMlList(list)
