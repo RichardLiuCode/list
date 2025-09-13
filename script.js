@@ -9,7 +9,7 @@ document.getElementById("addItem").addEventListener("click", function () {
     }
 })
 document.getElementById("deletebutton").addEventListener("click", function () {
-    var deleteItem = document.getElementById("input1").value;
+    var deleteItem = filterHTML(document.getElementById("input1").value);
     for (var i = 0; i < list.length; i = i + 1) {
         if (list[i] == deleteItem) {
             list.splice(i, 1)
