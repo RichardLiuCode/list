@@ -1,4 +1,4 @@
-export function getHTMlList(InputList) {
+export function getHTMLList(InputList) {
     var htmlList = ""
     for (var i = 0; i < InputList.length; i = i + 1) {
         htmlList = htmlList + "<li>" + InputList[i] + "</li>";
