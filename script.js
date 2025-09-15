@@ -1,4 +1,4 @@
-import { getHTMlList } from "./list.js"
+import { getHTMLList } from "./list.js"
 import { filterHTML } from "https://richardliucode.github.io/richardcode/RichardJS/xssFilterModule.js"
 var list = [];
 document.getElementById("addItem").addEventListener("click", function () {
